@@ -1,16 +1,15 @@
 [package]
-name = "botz_discordz"
-version = "0.1.0"
+name = "pepal_bot"
+version = "1.0.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 dotenv = "0.15.0"
-reqwest = {version = "0.11.8", features = ["json","cookies","blocking","multipart"] }
+reqwest = {version = "0.11.8", features = ["cookies"] }
 http = "0.2.6"
 scraper = "0.12.0"
-select = "0.5.0"
 chrono = "0.4"
 serenity = { default-features = false, features = ["client", "gateway", "rustls_backend", "model","framework","standard_framework", "rustls_backend"] }
 tokio = {version = "1.15.0", features = ["macros", "rt-multi-thread"]}
