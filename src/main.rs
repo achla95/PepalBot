@@ -29,8 +29,8 @@ async fn ping(ctx: &Context, msg: &Message) -> CommandResult {
 }
 #[command]
 async fn notes(ctx: &Context, msg: &Message) -> CommandResult {
-    let username = String::from("achbabi");
-    let password = String::from("Ay30ch09&*");
+    let username = String::from("USERNAME");
+    let password = String::from("PASSWORD");
     let user: structz::users::User = structz::users::User::new(username,password); // on créer notre un user PS : ajouter mut
     let mut login_info: HashMap<&str,&str> = HashMap::new();
     login_info.insert("login", user.username.as_str());
