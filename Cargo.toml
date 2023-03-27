@@ -13,4 +13,4 @@ scraper = "0.12.0"
 chrono = "0.4"
 serenity = { default-features = false, features = ["client", "gateway", "rustls_backend", "model","framework","standard_framework", "rustls_backend"] }
 tokio = {version = "1.15.0", features = ["macros", "rt-multi-thread"]}
-regex = "1.5.4"
+regex = "1.5.5"
